@@ -1,0 +1,26 @@
+[package]
+name = "nodestat"
+version = "1.0.0"
+edition = "2021"
+authors = ["NodeStat Contributors"]
+description = "Modern TUI for cluster node monitoring"
+license = "MIT"
+repository = "https://github.com/pbasting/NodeStat"
+keywords = ["hpc", "slurm", "cluster", "tui"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "nodestat"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+crossterm = "0.27"
+ratatui = "0.25"
+chrono = { version = "0.4", features = ["serde"] }
+async-trait = "0.1"
+rand = "0.8"
