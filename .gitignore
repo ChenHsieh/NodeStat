@@ -1,0 +1,33 @@
+# Build artifacts
+nodestat
+nodestat-rust/target/
+nodestat-rust/dist/
+nodestat-rust/python/dist/
+nodestat-rust/python/build/
+nodestat-rust/python/*.egg-info/
+
+# Go build cache
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
