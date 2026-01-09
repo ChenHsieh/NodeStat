@@ -10,7 +10,7 @@ A modern, interactive Terminal User Interface for monitoring HPC cluster nodes a
 pipx install nodestat-tui
 
 # Start monitoring
-nodestat
+nodestat-tui
 ```
 
 ### Option 2: Run Go Version
